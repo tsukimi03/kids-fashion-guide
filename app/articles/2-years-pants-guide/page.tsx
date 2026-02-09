@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import CTABox from '@/components/CTABox';
 import Dialogue from '@/components/Dialogue';
+import Container from '@/components/ui/Container';
+import Card from '@/components/ui/Card';
+import Button from '@/components/ui/Button';
 
 export const metadata = {
   title: '2歳のズボン選び方｜サイズ・体型別おすすめブランド5選【2026年版】',
@@ -9,8 +12,9 @@ export const metadata = {
 
 export default function Article() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50/30 to-white">
-      <article className="container mx-auto px-4 py-12 max-w-4xl">
+    <div className="min-h-screen bg-gray-50">
+      <Container className="py-12 max-w-4xl">
+      <article>
         {/* パンくずリスト */}
         <nav className="text-sm text-gray-600 mb-8">
           <Link href="/" className="hover:text-pink-600 transition-colors">ホーム</Link>
@@ -493,6 +497,7 @@ export default function Article() {
           </div>
         </section>
       </article>
+      </Container>
     </div>
   );
 }
