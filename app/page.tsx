@@ -4,20 +4,19 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-12">
       {/* Hero Section */}
-      <section className="text-center mb-16">
+      <section className="text-center mb-16 py-12">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          子ども服選び、もう迷わない
+          子供のパンツが合わない！<br className="md:hidden" />はもう終わり
         </h2>
         <p className="text-xl text-gray-600 mb-8">
-          0〜6歳のお子様を持つママ・パパのための、
-          <br />
-          子ども服選び完全ガイド
+          パンツ選び、離乳食、教育まで。<br />
+          子育て中のママ・パパを応援する情報サイト
         </p>
         <Link
           href="/diagnosis-redirect"
-          className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-colors shadow-lg"
+          className="inline-block bg-[#e17e96] text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-[#c96d82] transition-colors shadow-lg"
         >
-          🎯 2分で診断！あなたのお子さんにぴったりなズボンを探す
+          🎯 2分で診断！体型に合ったパンツを探す
         </Link>
       </section>
 
@@ -87,35 +86,33 @@ export default function Home() {
 
       {/* カテゴリー */}
       <section className="mt-16">
-        <h3 className="text-3xl font-bold text-gray-900 mb-8">カテゴリーから探す</h3>
-        <div className="grid md:grid-cols-4 gap-4">
+        <h3 className="text-3xl font-bold text-gray-900 mb-8 border-l-4 border-[#e17e96] pl-4">
+          カテゴリーから探す
+        </h3>
+        <div className="grid md:grid-cols-3 gap-6">
           <Link
-            href="/brands"
-            className="bg-blue-50 p-6 rounded-lg text-center hover:bg-blue-100 transition-colors"
+            href="/categories/pants"
+            className="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-lg text-center hover:shadow-lg transition-shadow border-2 border-pink-200"
           >
-            <div className="text-4xl mb-2">🏪</div>
-            <p className="font-bold">ブランド別</p>
+            <div className="text-5xl mb-3">👖</div>
+            <p className="text-xl font-bold text-gray-900">パンツ</p>
+            <p className="text-sm text-gray-600 mt-2">サイズ選び・体型別おすすめ</p>
           </Link>
           <Link
-            href="/body-types"
-            className="bg-green-50 p-6 rounded-lg text-center hover:bg-green-100 transition-colors"
+            href="/categories/baby-food"
+            className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-lg text-center hover:shadow-lg transition-shadow border-2 border-orange-200"
           >
-            <div className="text-4xl mb-2">👶</div>
-            <p className="font-bold">体型別</p>
+            <div className="text-5xl mb-3">🍼</div>
+            <p className="text-xl font-bold text-gray-900">離乳食</p>
+            <p className="text-sm text-gray-600 mt-2">月齢別・レシピ・進め方</p>
           </Link>
           <Link
-            href="/ages"
-            className="bg-yellow-50 p-6 rounded-lg text-center hover:bg-yellow-100 transition-colors"
+            href="/categories/education"
+            className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg text-center hover:shadow-lg transition-shadow border-2 border-blue-200"
           >
-            <div className="text-4xl mb-2">📅</div>
-            <p className="font-bold">年齢別</p>
-          </Link>
-          <Link
-            href="/diagnosis-redirect"
-            className="bg-purple-50 p-6 rounded-lg text-center hover:bg-purple-100 transition-colors"
-          >
-            <div className="text-4xl mb-2">🎯</div>
-            <p className="font-bold">診断ツール</p>
+            <div className="text-5xl mb-3">📚</div>
+            <p className="text-xl font-bold text-gray-900">教育</p>
+            <p className="text-sm text-gray-600 mt-2">知育・習い事・子育てのコツ</p>
           </Link>
         </div>
       </section>
