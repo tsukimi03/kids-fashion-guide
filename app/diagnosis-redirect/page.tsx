@@ -6,7 +6,7 @@ export default function DiagnosisRedirect() {
   useEffect(() => {
     // 3秒後にキッズパンツ診断にリダイレクト
     const timer = setTimeout(() => {
-      window.location.href = 'http://localhost:3000/quiz';
+      window.location.href = 'https://tangerine-cobbler-24b898.netlify.app/quiz';
     }, 3000);
 
     return () => clearTimeout(timer);
@@ -34,7 +34,7 @@ export default function DiagnosisRedirect() {
           </p>
         </div>
         <a
-          href="http://localhost:3000/quiz"
+          href="https://tangerine-cobbler-24b898.netlify.app/quiz"
           className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-colors"
         >
           今すぐ診断する →
